@@ -21,7 +21,7 @@ from PIL import Image
 # Load environment variables reliably from backend/.env regardless of working directory
 BACKEND_DIR = Path(__file__).resolve().parent.parent.parent
 ENV_PATH = BACKEND_DIR / ".env"
-load_dotenv(dotenv_path=ENV_PATH, override=True)
+load_dotenv(dotenv_path=ENV_PATH, override=False)
 
 logger = logging.getLogger("agrimind.gemini")
 
