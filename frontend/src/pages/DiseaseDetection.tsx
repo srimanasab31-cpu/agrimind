@@ -8,9 +8,7 @@ import {
 import axios from 'axios';
 import ErrorBoundary from '../components/ErrorBoundary';
 
-const API_BASE_URL = (typeof window !== 'undefined' && window.location.port === '3000')
-  ? '/api/v1/disease'
-  : 'http://127.0.0.1:8080/api/v1/disease';
+const API_BASE_URL = 'https://agrimind-ieec.onrender.com/api/v1/disease';
 
 interface DiseaseDetectionProps {
   defaultLang?: 'en' | 'ta';
