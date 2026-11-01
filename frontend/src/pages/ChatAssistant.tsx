@@ -5,9 +5,7 @@ import {
   Leaf, Globe, Check, ExternalLink, ChevronDown, ChevronUp, Bot, User
 } from 'lucide-react';
 
-const API_BASE_URL = (typeof window !== 'undefined' && window.location.port === '3000')
-  ? '/api/v1'
-  : 'http://127.0.0.1:8080/api/v1';
+const API_BASE_URL = 'https://agrimind-ieec.onrender.com/api/v1';
 
 interface Source {
   document_title: string;
