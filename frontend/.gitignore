@@ -1,0 +1,76 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+**/!.env.example
+
+# Python virtual environments
+venv/
+.venv/
+**/venv/
+**/.venv/
+
+# Python cache and test files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Local databases and private data
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated frontend files
+frontend/node_modules/
+frontend/dist/
+
+# Local model files - review before uploading
+# Uncomment if these are large or should remain private
+# *.pth
+# *.pt
+# *.onnx
+
+.env
+**/.env
+venv/
+.venv/
+**/node_modules/
+**/dist/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+backend/data/uploads/*
+!backend/data/uploads/.gitkeep
+
+*.db
+*.sqlite
+*.sqlite3

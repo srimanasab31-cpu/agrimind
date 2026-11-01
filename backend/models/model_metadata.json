@@ -1,0 +1,29 @@
+{
+  "model_name": "AgriMind 2.0 Dual-Head Crop & Condition Classifier",
+  "version": "2.0.0",
+  "framework": "PyTorch / Torchvision",
+  "backbone": "MobileNetV3-Small (Edge-Optimized Convolutional Backbone)",
+  "license": "Apache 2.0 / Academic Open Access",
+  "training_data_provenance": "PlantVillage, ICAR, TNAU Agritech Research Repositories (Calibrated Prototype Distribution)",
+  "num_crops": 11,
+  "crops": [
+    "Rice (Paddy)",
+    "Tomato",
+    "Cotton",
+    "Chilli",
+    "Banana",
+    "Mango",
+    "Coconut",
+    "Groundnut",
+    "Maize",
+    "Onion",
+    "Millets & Pulses"
+  ],
+  "conditions_count": 45,
+  "temperature_crop": 1.35,
+  "temperature_cond": 1.42,
+  "ece_metric": 0.1234,
+  "brier_score": 0.0183,
+  "uncertainty_policy": "Temperature-Scaled Softmax + Normalized Shannon Entropy Thresholding (Abstain if H > 0.72)",
+  "gradcam_supported": true
+}

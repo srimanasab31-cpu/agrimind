@@ -1,0 +1,121 @@
+{
+  "timestamp": "2026-10-30 00:53:17",
+  "evaluation_duration_seconds": 0.18,
+  "crop_identification": {
+    "overall_accuracy": 1.0,
+    "macro_f1": 1.0,
+    "class_metrics": {
+      "Rice (Paddy)": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 25
+      },
+      "Tomato": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 25
+      },
+      "Cotton": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 25
+      },
+      "Chilli": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 25
+      },
+      "Banana": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 25
+      },
+      "Mango": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 25
+      },
+      "Coconut": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 25
+      },
+      "Groundnut": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 25
+      },
+      "Maize": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 25
+      },
+      "Onion": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 25
+      },
+      "Millets & Pulses": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 25
+      }
+    }
+  },
+  "calibration": {
+    "ece": 0.1711,
+    "brier_score": 0.0343,
+    "bins": [
+      {
+        "bin": "0.6-0.7",
+        "accuracy": 1.0,
+        "confidence": 0.679,
+        "proportion": 0.007
+      },
+      {
+        "bin": "0.7-0.8",
+        "accuracy": 1.0,
+        "confidence": 0.773,
+        "proportion": 0.2
+      },
+      {
+        "bin": "0.8-0.9",
+        "accuracy": 1.0,
+        "confidence": 0.843,
+        "proportion": 0.778
+      },
+      {
+        "bin": "0.9-1.0",
+        "accuracy": 1.0,
+        "confidence": 0.906,
+        "proportion": 0.015
+      }
+    ]
+  },
+  "ood_rejection": {
+    "ood_samples_tested": 50,
+    "ood_rejected_count": 38,
+    "ood_rejection_rate": 0.76,
+    "abstention_threshold": "Normalized Entropy H > 0.72 or Top-1 < 0.40",
+    "error_reduction_impact": "Prevents forcing out-of-distribution leaf inputs into arbitrary classes."
+  },
+  "rag_retrieval": {
+    "precision_at_1": 0.6,
+    "recall_at_3": 1.0,
+    "citation_accuracy": 1.0
+  },
+  "domain_gate": {
+    "accuracy": 1.0
+  }
+}
