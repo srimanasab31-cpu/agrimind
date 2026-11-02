@@ -137,7 +137,11 @@ export default function ChatAssistant() {
       setMessages(prev => [...prev, assistantMsg]);
     } catch (err: any) {
       console.error("Chat error:", err);
-      const errorMsg = err.response?.data?.detail || "Network or server communication failure. Please verify backend connectivity.";
+      const errorMsg = axios.isCancel(err)
+  ? "Request cancelled. Please try again."
+  : err.code === 'ECONNABORTED'
+  ? "The AI is taking longer than expected. Please try again."
+  : err.response?.data?.detail || "Unable to connect to the server. Please try again.";
       setError(errorMsg);
       setLastFailedQuery(query);
       setInput(query);
