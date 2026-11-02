@@ -35,11 +35,7 @@ models.Base.metadata.create_all(bind=engine)
 # Auto-index default knowledge base on startup
 @app.on_event("startup")
 def startup_event():
-    db = SessionLocal()
-    try:
-        ensure_default_knowledge_base(db)
-    finally:
-        db.close()
+    print("AgriMind API started. Knowledge base indexing skipped during startup.")
 
 app.include_router(api_router, prefix="/api/v1")
 
