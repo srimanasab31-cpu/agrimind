@@ -121,7 +121,7 @@ export default function ChatAssistant() {
         query: query,
         language: language,
         session_id: sessionId
-      }, { timeout: 25000 });
+      }, { timeout: 120000 });
 
       const assistantMsg: Message = {
         role: 'assistant',
